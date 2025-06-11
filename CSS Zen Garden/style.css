@@ -9,32 +9,38 @@
 body {
     background-color: #e8f5e9;
     color: #2e7d32;
-    font-family: 'Georgia', serif;
+    font-family: sans-serif; /* ALTERAÇÃO: Fonte sans-serif para a página inteira */
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    width: 1000px; /* NOVO: Tamanho fixo da página */
+    margin: 0 auto; /* Centraliza a página */
+}
+
+p {
+    text-indent: 1em; /* NOVO: Indentação de parágrafos em 1em */
 }
 
 h1, h2, h3 {
     color: #2e7d32;
-    text-align: center;
+    text-align: center; /* Alinhamento central dos títulos */
     margin-bottom: 20px;
     font-family: 'Verdana', sans-serif;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 1.8rem; /* ALTERAÇÃO: Tamanho conforme atividade */
     border-bottom: 3px solid #81c784;
     padding-bottom: 10px;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.4rem; /* ALTERAÇÃO: Tamanho conforme atividade */
     color: #558b2f;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* ALTERAÇÃO: Tamanho conforme atividade */
     color: #66bb6a;
 }
 
@@ -109,6 +115,22 @@ button, .btn {
 
 button:hover, .btn:hover {
     background-color: #66bb6a;
+}
+
+/* 3. Seções de resumo e principal */
+/* Supondo que .summary seja a seção de resumo e .main seja a principal */
+
+.summary {
+    text-align: center; /* Alinhamento centralizado da seção de resumo */
+}
+
+.main p {
+    line-height: 1.5; /* Espaçamento entre linhas da seção principal */
+}
+
+/* 4. Abreviaturas */
+abbr {
+    font-variant: small-caps; /* Fonte em small-caps para abreviaturas */
 }
 
 /* Responsividade simples */
